@@ -16,9 +16,9 @@ var api = new ParseServer({
 replace myAppId and myMasterKey with your actual app id and master key, commit and push you changes to remote.
 
 ### With OpenShift Client Tools(RHC)
-Name api
+Name api Do not forget to update APP_ID and MASTER_KEY
 ```
-rhc app create api http://cartreflect-claytondev.rhcloud.com/github/icflorescu/openshift-cartridge-nodejs http://cartreflect-claytondev.rhcloud.com/github/icflorescu/openshift-cartridge-mongodb --from-code https://github.com/antt001/parse-server-example --env
+rhc app create api http://cartreflect-claytondev.rhcloud.com/github/icflorescu/openshift-cartridge-nodejs http://cartreflect-claytondev.rhcloud.com/github/icflorescu/openshift-cartridge-mongodb --from-code https://github.com/kwangkim/parse-server-example --env APP_ID=myAppId MASTER_KEY=myMasterKey
 ```
 ### This is a fork of parse-server-example
 
